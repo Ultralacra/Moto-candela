@@ -1,0 +1,11 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/breakpoints.module.scss";
+@import "../../styles/fonts.module.scss";
+
+.product-carousel {
+    padding: 2em 1em;
+
+    &__title {
+        @include title;
+    }
+}

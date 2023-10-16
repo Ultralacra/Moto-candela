@@ -1,0 +1,218 @@
+{
+  "uuid": "eda8ffc4-8a47-4999-97e0-dcd06d0d6776",
+  "lastMigration": 27,
+  "name": "Moto candela api",
+  "endpointPrefix": "api/rest/v1",
+  "latency": 0,
+  "port": 5000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "e3de72b4-856e-4627-9e80-2add229bcd33",
+      "type": "http",
+      "documentation": "Get Motorcycle List",
+      "method": "get",
+      "endpoint": "motorcycles",
+      "responses": [
+        {
+          "uuid": "a81068f2-e504-49f7-b83b-395a5ae56f8b",
+          "body": "[\r\n   {\r\n      \"name\":\"Arsen II\",\r\n      \"id\":1,\r\n      \"category\":\"Street\",\r\n      \"image\":\"src/assets/motos/street/arsen-II.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"TX 200\",\r\n      \"id\":2,\r\n      \"category\":\"Enduro\",\r\n      \"image\":\"src/assets/motos/enduro/tx.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"EK Express\",\r\n      \"id\":3,\r\n      \"category\":\"Street\",\r\n      \"image\":\"src/assets/motos/street/ek.png\"\r\n   },\r\n   {\r\n      \"name\":\"Horse\",\r\n      \"id\":4,\r\n      \"category\":\"Street\",\r\n      \"image\":\"src/assets/motos/street/horse.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Speed Cruiser 250\",\r\n      \"id\":5,\r\n      \"category\":\"Custom\",\r\n      \"image\":\"src/assets/motos/street/cruiser.png\"\r\n   },\r\n   {\r\n      \"name\":\"Owen\",\r\n      \"id\":6,\r\n      \"category\":\"Street\",\r\n      \"image\":\"src/assets/motos/street/owen.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Superlight Dark Edition\",\r\n      \"id\":7,\r\n      \"category\":\"Custom\",\r\n      \"image\":\"src/assets/motos/street/superlight.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Speed\",\r\n      \"id\":9,\r\n      \"category\":\"Street\",\r\n      \"image\":\"src/assets/motos/street/speed.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Caffe Nero\",\r\n      \"id\":10,\r\n      \"category\":\"Scooter\",\r\n      \"image\":\"src/assets/motos/scooter/caffe-nero.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Macis\",\r\n      \"id\":11,\r\n      \"category\":\"Scooter\",\r\n      \"image\":\"src/assets/motos/scooter/macis.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Outlook\",\r\n      \"id\":12,\r\n      \"category\":\"Scooter\",\r\n      \"image\":\"src/assets/motos/scooter/outlook.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Silverblade\",\r\n      \"id\":13,\r\n      \"category\":\"Scooter\",\r\n      \"image\":\"src/assets/motos/scooter/silverblade.jpg\"\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f1a86ec7-7fb6-4c74-85ac-9045027f00ef",
+      "type": "http",
+      "documentation": "Get Replacements List",
+      "method": "get",
+      "endpoint": "replacements",
+      "responses": [
+        {
+          "uuid": "141b52e0-05ac-4c31-bcf0-2e062cf5573d",
+          "body": "[\r\n   {\r\n      \"name\":\"Batería\",\r\n      \"id\":1,\r\n      \"code\": 1235,\r\n      \"image\":\"src/assets/replacements/bateria.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Bujía\",\r\n      \"id\":2,\r\n      \"code\": 4567,\r\n      \"image\":\"src/assets/replacements/bujia.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Cadena de Tiempo\",\r\n      \"id\":3,\r\n      \"code\": 7894,\r\n      \"image\":\"src/assets/replacements/cadena.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Carburador\",\r\n      \"id\":4,\r\n      \"code\": 4587,\r\n      \"image\":\"src/assets/replacements/carburador.webp\"\r\n   },\r\n   {\r\n      \"name\":\"CDI\",\r\n      \"id\":5,\r\n      \"code\": 1254,\r\n      \"image\":\"src/assets/replacements/cdi.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Crochera\",\r\n      \"id\":6,\r\n      \"code\": 6532,\r\n      \"image\":\"src/assets/replacements/crochera.webp\"\r\n   },\r\n   {\r\n      \"name\":\"Cuenta Kilometraje\",\r\n      \"id\":7,\r\n      \"code\": 9632,\r\n      \"image\":\"src/assets/replacements/cuenta-kilometraje.jpg\"\r\n   },\r\n   {\r\n      \"name\":\"Flotante\",\r\n      \"id\":9,\r\n      \"code\": 9173,\r\n      \"image\":\"src/assets/replacements/flotante.jpg\"\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ffeab79b-a7b0-4195-afac-e05205ae12cc",
+      "type": "http",
+      "documentation": "Get Motorcycle Detail",
+      "method": "get",
+      "endpoint": "motorcycles/:id",
+      "responses": [
+        {
+          "uuid": "45442bbf-4f57-4f64-ac26-f6ce4b131b0b",
+          "body": "{\r\n   \"name\":\"{{#switch (urlParam 'id')}}{{#case '1'}}Arsen II{{/case}}{{#case '2'}}TX 200{{/case}}{{#case '3'}}EK Express{{/case}}{{#case '4'}}Horse{{/case}}{{#case '5'}}Speed Cruiser 250{{/case}}{{#case '6'}}Owen{{/case}}{{#case '7'}}Superlight Dark Edition{{/case}}{{#case '9'}}Speed{{/case}}{{#case '10'}}Caffe Nero{{/case}}{{#case '11'}}Macis{{/case}}{{#case '12'}}Outlook{{/case}}{{#case '13'}}Silverblade{{/case}}{{/switch}}\",\r\n   \"id\":\"{{urlParam 'id'}}\",\r\n   \"category\":\"{{#switch (urlParam 'id')}}{{#case '1'}}Street{{/case}}{{#case '2'}}Enduro{{/case}}{{#case '3'}}Street{{/case}}{{#case '4'}}Street{{/case}}{{#case '5'}}Custom{{/case}}{{#case '6'}}Street{{/case}}{{#case '7'}}Custom{{/case}}{{#case '9'}}Street{{/case}}{{#case '10'}}Scooter{{/case}}{{#case '11'}}Scooter{{/case}}{{#case '12'}}Scooter{{/case}}{{#case '13'}}Scooter{{/case}}{{/switch}}\",\r\n   \"image\":\"{{#switch (urlParam 'id')}}{{#case '1'}}src/assets/motos/street/arsen-II.jpg{{/case}}{{#case '2'}}src/assets/motos/enduro/tx.jpg{{/case}}{{#case '3'}}src/assets/motos/street/ek.png{{/case}}{{#case '4'}}src/assets/motos/street/horse.jpg{{/case}}{{#case '5'}}src/assets/motos/street/cruiser.png{{/case}}{{#case '6'}}src/assets/motos/street/owen.jpg{{/case}}{{#case '7'}}src/assets/motos/street/superlight.jpg{{/case}}{{#case '9'}}src/assets/motos/street/speed.jpg{{/case}}{{#case '10'}}src/assets/motos/scooter/caffe-nero.jpg{{/case}}{{#case '11'}}src/assets/motos/scooter/macis.jpg{{/case}}{{#case '12'}}src/assets/motos/scooter/outlook.jpg{{/case}}{{#case '13'}}src/assets/motos/scooter/silverblade.jpg{{/case}}{{/switch}}\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0ba56c02-6e6e-4f20-82e8-11a2b7af1c0c",
+      "type": "http",
+      "documentation": "Get Replacement Detail",
+      "method": "get",
+      "endpoint": "replacements/:id",
+      "responses": [
+        {
+          "uuid": "ccc479d7-ebbb-4d52-b332-792c964691e3",
+          "body": "{\r\n   \"name\":\"{{#switch (urlParam 'id')}}{{#case '1'}}Batería{{/case}}{{#case '2'}}Bujía{{/case}}{{#case '3'}}Cadena de Tiempo{{/case}}{{#case '4'}}Carburador{{/case}}{{#case '5'}}CDI{{/case}}{{#case '6'}}Crochera{{/case}}{{#case '7'}}Cuenta Kilometraje{{/case}}{{#case '9'}}Flotante{{/case}}{{/switch}}\",\r\n   \"id\":\"{{urlParam 'id'}}\",\r\n   \"code\":\"{{#switch (urlParam 'id')}}{{#case '1'}}1235{{/case}}{{#case '2'}}4567{{/case}}{{#case '3'}}7894{{/case}}{{#case '4'}}4587{{/case}}{{#case '5'}}1254{{/case}}{{#case '6'}}6532{{/case}}{{#case '7'}}9632{{/case}}{{#case '9'}}9173{{/case}}{{/switch}}\",\r\n   \"image\":\"{{#switch (urlParam 'id')}}{{#case '1'}}src/assets/replacements/bateria.jpg{{/case}}{{#case '2'}}src/assets/replacements/bujia.jpg{{/case}}{{#case '3'}}src/assets/replacements/cadena.jpg{{/case}}{{#case '4'}}src/assets/replacements/carburador.jpg{{/case}}{{#case '5'}}src/assets/replacements/cdi.jpg{{/case}}{{#case '6'}}src/assets/replacements/crochera.webp{{/case}}{{#case '7'}}src/assets/replacements/cuenta-kilometraje.jpg{{/case}}{{#case '9'}}src/assets/replacements/flotante.jpg{{/case}}{{/switch}}\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9b4c1d66-bd47-4058-a6c8-03862b30db92",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "categories/motorcycles",
+      "responses": [
+        {
+          "uuid": "9d4d7748-a825-438d-ad5f-6791727b89a3",
+          "body": "[\r\n   {\r\n      \"name\":\"Sport\",\r\n      \"id\":\"1\"\r\n   },\r\n   {\r\n      \"name\":\"Street\",\r\n      \"id\":\"2\"\r\n   },\r\n   {\r\n      \"name\":\"Enduro\",\r\n      \"id\":\"3\"\r\n   },\r\n   {\r\n      \"name\":\"Custom\",\r\n      \"id\":\"4\"\r\n   },\r\n   {\r\n      \"name\":\"Scooter\",\r\n      \"id\":\"5\"\r\n   }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "e3de72b4-856e-4627-9e80-2add229bcd33"
+    },
+    {
+      "type": "route",
+      "uuid": "f1a86ec7-7fb6-4c74-85ac-9045027f00ef"
+    },
+    {
+      "type": "route",
+      "uuid": "ffeab79b-a7b0-4195-afac-e05205ae12cc"
+    },
+    {
+      "type": "route",
+      "uuid": "0ba56c02-6e6e-4f20-82e8-11a2b7af1c0c"
+    },
+    {
+      "type": "route",
+      "uuid": "9b4c1d66-bd47-4058-a6c8-03862b30db92"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
