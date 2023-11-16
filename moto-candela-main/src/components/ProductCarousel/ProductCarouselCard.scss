@@ -1,0 +1,50 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/breakpoints.module.scss";
+
+.product-card {
+    &__container {
+        padding: 1em;
+        max-width: 360px;
+        border-radius: 10px;
+        
+        box-shadow: 1px 1px .5px .5px rgba(0,0,0,.15),
+                    -1px -1px .5px .5px rgba(0,0,0,.15);
+    }
+
+    &__image {
+        aspect-ratio: 16/10;
+        width: 100%;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__content {
+
+        &-category, &-description {
+            color: $grey;
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: flex-end;
+
+        &-button {
+            color: $white;
+            display: block;
+            border-radius: 10em;
+            padding: 0.6em 1.8em;
+            background-color: $red;
+            border: solid 1px $red;
+            transition: all 0.25s;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $white;
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@import "../../../styles/colors.module.scss";
+@import "../../../styles/breakpoints.module.scss";
+
+.cart-item {
+	@media screen and (max-width: 570px) {
+		&__container {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 2px;
+		}
+
+		&__content {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 2px;
+
+			&-image {
+				width: 35px;
+			}
+
+			&-price {
+				font-size: 0.7em;
+			}
+		}
+
+		&__detail-link {
+			font-size: small;
+		}
+
+		&__amount {
+			font-size: 0.9em;
+		}
+
+		&__action {
+			gap: 0.5em;
+			flex-direction: column;
+
+			.plus {
+				order: -1;
+			}
+			
+			&-counter {
+				min-width: 25px;
+				min-height: 25px;
+				font-size: 14px;
+			}
+
+			button {
+				width: 45px;
+				height: 45px;
+			}
+		}
+	}
+
+	@media screen and (min-width:570px) and (max-width: $tablet-width) {
+		&__container {
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1em;
+		}
+
+		&__content {
+			align-items: center;
+			gap: 1em;
+
+			&-image {
+				width: 75px;
+			}
+
+			&-price {
+				font-size: 0.8em;
+			}
+		}
+
+		&__detail-link {
+			font-size: small;
+		}
+
+		&__action {
+			gap: 0.5em;
+
+			&-counter {
+				min-width: 25px;
+				min-height: 25px;
+				font-size: 14px;
+			}
+			
+			button {
+				width: 45px;
+				height: 45px;
+			}
+		}
+	}
+
+	@media screen and (min-width: $tablet-width) {
+		&__container {
+			grid-template-columns: repeat(5, 1fr);
+			gap: 1em;
+		}
+
+		&__content {
+			grid-column-end: span 2;
+			align-items: center;
+			gap: 2em;
+
+			&-image {
+				width: 150px;
+			}
+
+			&-price {
+				font-size: 0.9em;
+			}
+		}
+
+		&__detail-link {
+			font-size: large;
+		}
+
+		&__action {
+			gap: 1em;
+			
+			&-counter {
+				min-width: 40px;
+				min-height: 40px;
+			}
+
+			button {
+				width: 85px;
+				height: 85px;
+			}
+		}
+	}
+
+    &__container {
+		display: grid;
+		align-items: center;
+        padding: 1em;
+        border-radius: 10px;        
+        box-shadow: 1px 1px .5px .5px rgba(0,0,0,.15),
+                    -1px -1px .5px .5px rgba(0,0,0,.15);
+		width: 98%;
+    }
+
+    &__content {
+		display: flex;	
+
+		&-image {
+			aspect-ratio: 1/1;
+		}
+
+        &-category, &-description {
+            color: $grey;
+        }
+
+		&-price {
+			font-weight: bold;
+			p {
+				margin: 0;
+			}
+		}
+    }
+
+	&__detail-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__amount {		
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		font-weight: bold;
+		p {
+			margin: 0;
+		}
+	}
+
+    &__action {
+        display: flex;
+		align-items: center;
+
+		&-counter {
+			border-radius: 50%;
+			background-color: $red;
+			color: $black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+		}
+		
+		button {
+			border-radius: 50%;
+		}
+    }
+}

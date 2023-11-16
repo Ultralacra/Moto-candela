@@ -1,0 +1,40 @@
+
+// @import "../../styles/breakpoints.module.scss";
+
+.title {
+    text-align: center;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0;
+
+    .cart-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 0px 25px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        height: fit-content;
+        gap: 1em;
+        width: 100%;
+    
+        &__title {
+            margin: 0;
+            text-align: center;
+        }
+    
+        &__description {
+            text-align: center;
+        }
+    }
+
+    button {
+        width: 10em;
+    }
+}
+

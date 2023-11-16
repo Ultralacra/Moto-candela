@@ -1,0 +1,47 @@
+@import "../../../styles/colors.module.scss";
+@import "../../../styles/breakpoints.module.scss";
+
+.cart-summary {
+	@media screen and (max-width: 570px) {
+		&__titles {
+			font-size: 0.8em;
+		}
+
+		&__dollar {
+			font-size: 0.8em;
+		}
+
+		&__bs {
+			font-size: 0.8em;
+		}
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		padding: 1em;
+		border-radius: 10px;
+		box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.15),
+			-1px -1px 0.5px 0.5px rgba(0, 0, 0, 0.15);
+		width: 98%;
+	}
+
+	&__titles,
+	&__dollar,
+	&__bs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-weight: bold;
+		gap: 0.5em;
+
+		&-total {
+			background-color: $red;
+			color: $white;
+			width: 100%;
+			text-align: center;
+			padding: 1em;
+		}
+	}
+}
